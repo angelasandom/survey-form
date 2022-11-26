@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Diego's Pizza Survey Form</h1>
+        <p id="description">With this form you are helping us to keep improving everyday. Thank you.</p>
+      </header>
+      <form id="survey-form">
+        <fieldset>
+          <legend><b>Tell us about you: </b></legend>
+          <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+          <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+          <label id="number-label">Age: <input id="number" type="number" min="13" max="99" placeholder="Age" required /></label>
+          <label id="favourite">Which one is your favourite Diegos Pizza?:  
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Diegos Special</option>
+              <option value="2">Double Cheese</option>
+              <option value="3">Sicilia</option>
+              <option value="4">New Yorker</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend><b>Do you want to be a member of Diegos Pizza Club?: </b></legend>
+          <label><input type="radio" name="club" value="yes"/>Yes</label>
+          <label><input type="radio" name="club" value="message" />No</label>
+        </fieldset>
+        <fieldset>
+          <legend><b>How do you want to receive our offers?: </b></legend>
+          <label><input type="checkbox" value="text" />Text message</label>
+          <label><input type="checkbox" value="email" />Email</label>
+          <label><input type="checkbox" value="mail" />Mail</label>
+         </fieldset>
+         <fieldset>
+           <legend><b>We appreciate your comments</b></legend>
+           <label><textarea name="comment" row="3" col="30" />I would like to let you know...</textarea>
+           <label><input id="submit" type="submit" /></label>
+          </fieldset>
+        </form>
+      </div>
+      <footer><p class="footer-text"><b>Diegos Pizza 2022</b></p></footer>
+    </body>
+</html>
